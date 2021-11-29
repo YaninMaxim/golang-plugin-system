@@ -1,5 +1,6 @@
 package main
 
-func Something(a, b int) int {
+// Эта функция не будет вызвана
+func SomethingElse(a, b int) int {
 	return a * b
 }

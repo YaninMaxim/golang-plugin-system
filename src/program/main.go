@@ -20,13 +20,15 @@ func main() {
 	for _, filename := range plugins {
 		p, err := plugin.Open(filename)
 		if err != nil {
-			panic(err)
+			fmt.Println(err)
+			continue
 		}
 
 		// Наш плагин должен содержать функцию или переменную Something
 		symbol, err := p.Lookup("Something")
 		if err != nil {
-			panic(err)
+			fmt.Println(err)
+			continue
 		}
 
 		// Функция Something принимает два параметра int и возвращает int

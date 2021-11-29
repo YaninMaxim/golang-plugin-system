@@ -1,5 +1,10 @@
-golang-plugin-system
+# Система плагинов на Go
 Очень простой пример реализации использования системы плагинов.
 За основу взято:
-https://code.tutsplus.com/tutorials/writing-plugins-in-go--cms-29101
-https://go.dev/pkg/plugin/?m=all,old
+- https://code.tutsplus.com/tutorials/writing-plugins-in-go--cms-29101
+- https://go.dev/pkg/plugin/?m=all,old
+
+Исходники лежат в каталоге src.
+Скомпилированные бинарники в каталоге bin.
+
+Скрипт `build.sh` соберет основную программу и каждый из плагинов.
